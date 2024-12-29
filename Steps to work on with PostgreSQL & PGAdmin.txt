@@ -1,0 +1,15 @@
+WORKING ON WITH PostgreSQL & PGAdmin:
+
+1. Install PostgreSQL (File attached)
+2. Install PGAdmin (Any version) - Used to interact with PostgreSQL in visualized manner which is similar to MySQL Workbench.
+3. While Installing PostgreSQL, it will ask for root password, enter it and remember it.
+4. After Installing PGAdmin, open it, it will ask for root password, enter it and remeber it.
+5. So, here the default user name is "postgres" & password is what you have entered.
+6. Now Open PGAdmin, it will show the Browser Panel at the left side.
+7. Browser Panel -> Expand Server -> Expand PostgreSQL (If asks password, enter it) -> Expand Databases -> Right click on Databases -> Create -> New Database -> Enter the Name of the Databases (Eg. aoopdb) -> OK/Save.
+8. Expand aoopdb-> Expand Schemas -> Expand Public -> Expand Tables -> Right Click on Tables -> Create New Table -> New wizard will open.
+9. In general tab, enter the Table Name. 
+10. In Column Tab, Enter the column names and its data type after click on "+" button.
+11. Click Save.
+12. Right Click on the created table -> select view/edit rows -> all rows. (it will show the Table with its associated data if any are there otherwise empty table will be displayed but we can feed the data row by raw by click "+" button and after that save button.
+13. Click on Save Button is important otherwise the data will not be saved. 

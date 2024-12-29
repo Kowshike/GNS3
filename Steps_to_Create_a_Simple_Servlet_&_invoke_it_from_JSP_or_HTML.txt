@@ -1,0 +1,30 @@
+Steps to follow to do Servlet Programs in Eclipse:
+1. Install Eclipse 2022 (or) 2021. If already installed older version, upgrade it in the the option(Help-> Install New Software -> Type 2022 (or) 2021 -> select all -> Next-> Agree the T&C -> Finish.
+2. Download Apache Tomcat 8.5 (jar file) from online (File attached below).
+3. Open New Project in Eclipse -> New -> Project -> Dynamic Web Project -> Type Name of Project -> Click New Runtime -> Open Apache -> Select Tomcat 8.5 -> Next -> Select the folder of downloaded .jar file -> OK.
+4. After that one dialog box will apear -> Click open Perspective.
+5. New Project Opened Now. You can see the server name in ther server panel - Right Click on it & click run to check the server is installed & running successfully.
+6. Within the project directory, Right Click on the source folder "src" -> New -> Servlet -> give servlet class name -> give package name(Optional) -> Next -> Finish.
+7. Now servlet java file is created.
+8. within that, we can remove comments & irrelevant codes. & type the below mentioned test code in the doGet method.
+		
+		response.setContentType("text/html");
+		PrintWriter p = response.getWriter();
+		p.print("Hai..");
+
+9. Save it. 
+10. right click on the project root folder-> Run -> Run on Server -> Select the Apache Tomcat 8.5 -> Run it.
+11. On successfull running, browser will open with the project path in the address bar but nothing will be displayed.
+For Eg: http://localhost:8080/ServletDT1
+12. After that append your servlet class name in the url of the browser as shown below to see the output of the given code.
+For Eg: http://localhost:8080/ServletDT1/ServDemo
+
+This is only for creating the servlet.
+
+In next File, I will depict invoking the servlet from JSP.
+
+13. Create New JSP or HTML file with the name as "index" in the webapp path and place the code which is mentioned in the attached JSP file.
+13.a. within body tag, open the form tag with the action value as servlet class name & mothod value as GET.
+13.b. create a submit button
+14. Right click on the project root folder, run-> run on server -> select Tomcat 8.5 server -> Next -> OK.
+15. See the output in the browser -> click submit button to invoke the servlet.
